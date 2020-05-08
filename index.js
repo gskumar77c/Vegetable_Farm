@@ -38,8 +38,7 @@ const tempOverview = fs.readFileSync(`${__dirname}/templates/template-overview.h
 
 
 const server = http.createServer((req,res)=>{
-    //console.log(req);
-    // console.log(req.url);
+
     // console.log(url.parse(req.url,true))
     const {query,pathname} = url.parse(req.url,true);
 
